@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "3e9225d4-6a30-4d8e-bee1-15a67522c739",
+		"name": "Mensageria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13381171"
+	},
+	"item": [
+		{
+			"name": "Comprar com fila",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCliente\": \"Diego\",\r\n    \"descricao\": \"notebook\",\r\n    \"valor\": 13000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/compras",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"compras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar com exchange fanout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCliente\": \"Diego\",\r\n    \"descricao\": \"notebook\",\r\n    \"valor\": 13000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/compras/exchange-fanout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"compras",
+						"exchange-fanout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar com exchange direct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCliente\": \"Diego\",\r\n    \"descricao\": \"notebook\",\r\n    \"valor\": 13000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/compras/exchange-direct",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"compras",
+						"exchange-direct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar com exchange topic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCliente\": \"Diego\",\r\n    \"descricao\": \"notebook\",\r\n    \"valor\": 13000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/compras/exchange-topic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"compras",
+						"exchange-topic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar com exchange headers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCliente\": \"Diego\",\r\n    \"descricao\": \"notebook\",\r\n    \"valor\": 13000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/compras/exchange-headers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"compras",
+						"exchange-headers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
