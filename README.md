@@ -1,2 +1,2 @@
-# estudos
-Repositório de projetos para estudos
+# Estudos
+Repositório de projetos para estudos.
